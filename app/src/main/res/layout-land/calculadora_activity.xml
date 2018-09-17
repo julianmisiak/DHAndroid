@@ -8,103 +8,128 @@
     tools:context="com.ejerciciosdh.pantallaprincipal.CalculadoraActivity">
 
     <EditText
-        android:id="@+id/etCassio"
-        android:layout_width="match_parent"
+        android:id="@+id/etPantallaSubtotal"
+        android:layout_width="533dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_light"
-        android:gravity="start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_dark"
+        android:gravity="end"
         android:inputType="numberDecimal"
+        android:padding="1sp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/etCassio"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/holo_green_light"
         android:padding="1sp"
         android:text="Cassio"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-       android:focusable="false" />
-    <EditText
-        android:id="@+id/etPantallaSubtotal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:inputType="numberDecimal"
-        android:background="@android:color/background_dark"
-        android:textColor="@android:color/white"
-        android:gravity="end"
-        android:padding="1sp"
-        android:layout_below="@+id/etCassio"
-       android:focusable="false" />
+        android:textAlignment="center"
+        android:textDirection="ltr"
+        android:textIsSelectable="false"
+        android:focusable="false" />
+
     <EditText
         android:id="@+id/etPantalla"
-        android:layout_width="match_parent"
+        android:layout_width="533dp"
         android:layout_height="wrap_content"
-        android:textSize="80sp"
-        android:inputType="numberDecimal"
+        android:layout_below="@+id/etPantallaSubtotal"
         android:background="@android:color/background_dark"
-        android:textColor="@android:color/white"
-        android:text="0"
         android:gravity="end"
-        android:paddingBottom="8dp"
+        android:inputType="numberDecimal"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:layout_below="@+id/etPantallaSubtotal"
-       android:focusable="false" />
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:focusable="false" />
 
     <Button
         android:id="@+id/btnC"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPantalla"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:padding="10dp"
+        
         android:text="C"
         android:textColor="@android:color/black"
-        android:textSize="36sp"
-        android:layout_margin="1dp"/>
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnSumRes"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPantalla"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:layout_toRightOf="@+id/btnC"
-        android:padding="10dp"
-        android:textSize="36sp"
+        android:background="@android:color/darker_gray"
+        
         android:text="+/-"
         android:textColor="@android:color/black"
-        android:background="@android:color/darker_gray"
-        android:layout_margin="1dp"/>
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnPorciento"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPantalla"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:layout_toRightOf="@+id/btnSumRes"
-        android:padding="10dp"
-        android:textSize="36sp"
+        android:background="@android:color/darker_gray"
+        
         android:text="%"
         android:textColor="@android:color/black"
-        android:background="@android:color/darker_gray"
-        android:layout_margin="1dp"/>
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnDividir"
-        android:layout_width="match_parent"
+        android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPantalla"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:layout_toRightOf="@+id/btnPorciento"
-        android:padding="10dp"
-        android:textSize="36sp"
+        android:background="@android:color/holo_orange_dark"
+        
         android:text="/"
         android:textColor="@android:color/black"
-        android:background="@android:color/holo_orange_dark"
-        android:layout_margin="1dp"/>
+        android:textSize="18sp" />
 
 
     <Button
         android:id="@+id/btnSiete"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnC"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18dp"
         android:text="7"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -112,12 +137,12 @@
 
     <Button
         android:id="@+id/btnOcho"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnSumRes"
         android:layout_toRightOf="@+id/btnSiete"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="8"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -125,12 +150,12 @@
 
     <Button
         android:id="@+id/btnNueve"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnPorciento"
         android:layout_toRightOf="@+id/btnOcho"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="9"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -138,26 +163,26 @@
 
     <Button
         android:id="@+id/btnMultiplicacion"
-        android:layout_width="match_parent"
+        android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnDividir"
         android:layout_toRightOf="@+id/btnNueve"
         android:background="@android:color/holo_orange_dark"
-        android:padding="10dp"
+        
         android:text="x"
         android:textColor="@android:color/black"
-        android:textSize="36sp"
+        android:textSize="18sp"
         android:layout_margin="1dp"/>
 
 
 
     <Button
         android:id="@+id/btnCuatro"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnSiete"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="4"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -165,12 +190,12 @@
 
     <Button
         android:id="@+id/btnCinco"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnOcho"
         android:layout_toRightOf="@+id/btnCuatro"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="5"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -178,12 +203,12 @@
 
     <Button
         android:id="@+id/btnSeis"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnNueve"
         android:layout_toRightOf="@+id/btnCinco"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="6"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -191,12 +216,12 @@
 
     <Button
         android:id="@+id/btnResta"
-        android:layout_width="match_parent"
+        android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnMultiplicacion"
         android:layout_toRightOf="@+id/btnSeis"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="-"
         android:textColor="@android:color/black"
         android:background="@android:color/holo_orange_dark"
@@ -204,11 +229,11 @@
 
     <Button
         android:id="@+id/btnUno"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnCuatro"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="1"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -216,12 +241,12 @@
 
     <Button
         android:id="@+id/btnDos"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnCinco"
         android:layout_toRightOf="@+id/btnUno"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="2"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -229,12 +254,12 @@
 
     <Button
         android:id="@+id/btnTres"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnSeis"
         android:layout_toRightOf="@+id/btnDos"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="3"
         android:textColor="@android:color/black"
         android:background="@android:color/darker_gray"
@@ -242,12 +267,12 @@
 
     <Button
         android:id="@+id/btnSuma"
-        android:layout_width="match_parent"
+        android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnResta"
         android:layout_toRightOf="@+id/btnTres"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
+        android:textSize="18sp"
         android:text="+"
         android:textColor="@android:color/black"
         android:background="@android:color/holo_orange_dark"
@@ -255,50 +280,45 @@
 
     <Button
         android:id="@+id/btnCero"
-        android:layout_width="178dp"
+        android:layout_width="131dp"
         android:layout_height="match_parent"
         android:layout_below="@+id/btnUno"
-        android:layout_marginBottom="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
         android:background="@android:color/darker_gray"
-        android:padding="10dp"
-        android:text="0"
+        
+        android:textSize="18sp"
         android:textColor="@android:color/black"
-        android:textSize="36sp" />
+        android:text="0"
+        android:layout_margin="1dp"/>
 
     <Button
         android:id="@+id/btnPunto"
-        android:layout_width="wrap_content"
+        android:layout_width="131sp"
         android:layout_height="match_parent"
         android:layout_below="@+id/btnTres"
+        android:layout_margin="1dp"
+        android:layout_toRightOf="@+id/btnCero"
+        android:background="@android:color/darker_gray"
+        
+        android:text="."
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="266dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSuma"
         android:layout_marginBottom="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
-        android:layout_toRightOf="@+id/btnCero"
-        android:background="@android:color/darker_gray"
-        android:padding="10dp"
-        android:text="."
-        android:textColor="@android:color/black"
-        android:textSize="36sp" />
-
-    <Button
-        android:id="@+id/btnIgual"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/btnSuma"
         android:layout_toRightOf="@+id/btnPunto"
         android:background="@android:color/holo_orange_dark"
-        android:padding="10dp"
-        android:textSize="36sp"
+        
         android:text="="
         android:textColor="@android:color/black"
-        android:layout_margin="1dp"/>
+        android:textSize="18sp" />
 
 </android.widget.RelativeLayout>

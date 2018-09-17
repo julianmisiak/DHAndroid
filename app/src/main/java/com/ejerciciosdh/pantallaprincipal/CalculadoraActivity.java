@@ -33,7 +33,6 @@ public class CalculadoraActivity extends AppCompatActivity {
     private Button btnOcho;
     private Button btnNueve;
     private Button btnPunto;
-    private Boolean isClickPunto = Boolean.FALSE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,8 +80,22 @@ public class CalculadoraActivity extends AppCompatActivity {
         btnOcho.setOnClickListener(numeroslistener);
         btnNueve.setOnClickListener(numeroslistener);
         btnPunto.setOnClickListener(numeroslistener);
+        btnIgual.setOnClickListener(igualListener);
+
+        btnPorciento.setOnClickListener(porcientoListener);
     }
 
+    View.OnClickListener porcientoListener = new View.OnClickListener() {
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+        @Override
+        public void onClick(View v) {
+            Double valorOperacion = Double.parseDouble(txtPantalla.getText().toString());
+            String resultado = Double.toString(valorOperacion / 100.0);
+            txtPantalla.setText(resultado);
+
+        }
+    };
+TT
 
     View.OnClickListener numeroslistener = new View.OnClickListener() {
         @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -94,9 +107,8 @@ public class CalculadoraActivity extends AppCompatActivity {
                 txtPantalla.setText("");
             }
 
-            if(!botonTxt.toString().equals(".") || !isClickPunto){
-                if(botonTxt.toString().equals(".")){
-                    isClickPunto = Boolean.TRUE;
+            if (!botonTxt.toString().equals(".") || !contientePunto()) {
+                if (botonTxt.toString().equals(".")) {
                 }
                 txtPantalla.setText(txtPantalla.getText().toString().concat(botonTxt));
 
@@ -116,43 +128,55 @@ public class CalculadoraActivity extends AppCompatActivity {
             String valorPantallaSubtotal = etPantallaSubtotal.getText().toString();
             Integer tamValorPantallaSubtotal = valorPantallaSubtotal.length();
 
-            if(!valorPantallaSubtotal.isEmpty() ) {
+            if (!valorPantalla.isEmpty()) {
+                ultimo = valorPantalla.charAt(valorPantalla.length() - 1);
+                if (ultimo == '.') {
+                    valorPantalla = valorPantalla.substring(0, valorPantalla.length() - 1);
+                }
+            }
+
+            if (!valorPantallaSubtotal.isEmpty()) {
                 ultimo = valorPantallaSubtotal.charAt(tamValorPantallaSubtotal - 1);
             }
 
-            if(tamValorPantallaSubtotal > 0 &&  (ultimo == '+' || ultimo == '-' || ultimo == '/' || ultimo == 'x' )){
+            if (tamValorPantallaSubtotal > 0 && (ultimo == '+' || ultimo == '-' || ultimo == '/' || ultimo == 'x')) {
                 valorPantallaSubtotal = valorPantallaSubtotal.substring(0, tamValorPantallaSubtotal - 1);
 
-                if(!valorPantalla.isEmpty()){
+                if (!valorPantalla.isEmpty()) {
                     Double valorOperacion1 = Double.parseDouble(valorPantalla.toString());
                     Double valorOperacion2 = Double.parseDouble(valorPantallaSubtotal.toString());
-                    switch (botonTxt){
-                        case "+": valorOperacion1+=valorOperacion2;
+                    switch (botonTxt) {
+                        case "+":
+                            valorOperacion2 += valorOperacion1;
                             break;
-                        case "-": valorOperacion1-=valorOperacion2;
+                        case "-":
+                            valorOperacion2 -= valorOperacion1;
                             break;
-                        case "/": valorOperacion1/=valorOperacion2;
+                        case "/":
+                            if (valorOperacion1.equals(new Double(0))) {
+                                valorOperacion2 = 0.0;
+                            } else {
+                                valorOperacion2 /= valorOperacion1;
+                            }
                             break;
-                        case "x": valorOperacion1*=valorOperacion2;
+                        case "x":
+                            valorOperacion2 *= valorOperacion1;
                     }
 
-                    txtPantalla.setText(valorOperacion1.toString());
+                    txtPantalla.setText(valorOperacion2.toString());
                     etPantallaSubtotal.setText("");
-                }else{
-                    valorPantallaSubtotal+=botonTxt;
+                } else {
+                    valorPantallaSubtotal += botonTxt;
                     txtPantalla.setText("");
                     etPantallaSubtotal.setText(valorPantallaSubtotal);
                 }
 
-            }else{
+            } else {
                 valorPantallaSubtotal = valorPantalla;
-                valorPantallaSubtotal+=botonTxt;
+                valorPantallaSubtotal += botonTxt;
                 txtPantalla.setText("");
                 etPantallaSubtotal.setText(valorPantallaSubtotal);
             }
-
-
-
 
 
         }
@@ -162,7 +186,7 @@ public class CalculadoraActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             txtPantalla.setText("0");
-            Toast.makeText(getApplicationContext(), "Borrado", Toast.LENGTH_LONG).show();
+            etPantallaSubtotal.setText("");
         }
     };
 
@@ -179,4 +203,64 @@ public class CalculadoraActivity extends AppCompatActivity {
         }
     };
 
+    View.OnClickListener igualListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            char ultimo = 0;
+            String valorPantalla = txtPantalla.getText().toString();
+            String valorPantallaSubtotal = etPantallaSubtotal.getText().toString();
+            Integer tamValorPantallaSubtotal = valorPantallaSubtotal.length();
+
+            if (!valorPantalla.isEmpty()) {
+                ultimo = valorPantalla.charAt(valorPantalla.length() - 1);
+                if (ultimo == '.') {
+                    valorPantalla = valorPantalla.substring(0, valorPantalla.length() - 1);
+                }
+            }
+            if (!valorPantallaSubtotal.isEmpty()) {
+                ultimo = valorPantallaSubtotal.charAt(tamValorPantallaSubtotal - 1);
+            } else {
+                return;
+            }
+
+            valorPantallaSubtotal = valorPantallaSubtotal.substring(0, tamValorPantallaSubtotal - 1);
+
+            if (!valorPantalla.isEmpty()) {
+                Double valorOperacion1 = Double.parseDouble(valorPantalla.toString());
+                Double valorOperacion2 = Double.parseDouble(valorPantallaSubtotal.toString());
+                switch (ultimo) {
+                    case '+':
+                        valorOperacion2 += valorOperacion1;
+                        break;
+                    case '-':
+                        valorOperacion2 -= valorOperacion1;
+                        break;
+                    case '/':
+                        if (valorOperacion1.equals(new Double(0))) {
+                            valorOperacion2 = 0.0;
+                        } else {
+                            valorOperacion2 /= valorOperacion1;
+                        }
+                        break;
+                    case 'x':
+                        valorOperacion2 *= valorOperacion1;
+                }
+
+                txtPantalla.setText(valorOperacion2.toString());
+                etPantallaSubtotal.setText("");
+
+            }
+
+        }
+
+
+    };
+
+    private Boolean contientePunto() {
+        if (txtPantalla.getText().toString().contains(".")) {
+            return Boolean.TRUE;
+        } else {
+            return Boolean.FALSE;
+        }
+    }
 }
