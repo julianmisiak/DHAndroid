@@ -31,4 +31,11 @@
         android:layout_below="@+id/btnEjercicio2"
         android:text="Ejercicio 3" />
 
+    <Button
+        android:id="@+id/btnCalculadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEjercicio3"
+        android:text="Calculadora" />
+
 </LinearLayout>

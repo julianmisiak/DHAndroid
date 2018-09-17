@@ -1,14 +1,11 @@
 package com.ejerciciosdh.pantallaprincipal;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.ejerciciosdh.pantallaprincipalactivity.R;
 
@@ -19,6 +16,7 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
     @BindView(R.id.btnEjercicio1) Button btnEjercicio1;
     @BindView(R.id.btnEjercicio2) Button btnEjercicio2;
     @BindView(R.id.btnEjercicio3) Button btnEjercicio3;
+    @BindView(R.id.btnCalculadora) Button btnCalculadora;
     private Unbinder unbinder;
 
     @Override
@@ -30,6 +28,7 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
         btnEjercicio1.setOnClickListener(listenerEjericicio1);
         btnEjercicio2.setOnClickListener(listenerEjericicio2);
         btnEjercicio3.setOnClickListener(listenerEjericicio3);
+        btnCalculadora.setOnClickListener(listenerCalculadora);
     }
 
 
@@ -56,6 +55,15 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent (v.getContext(), Ejercicio3Activity.class);
+            startActivityForResult(intent, 0);
+
+        }
+    };
+
+    View.OnClickListener listenerCalculadora= new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent (v.getContext(), CalculadoraActivity.class);
             startActivityForResult(intent, 0);
 
         }

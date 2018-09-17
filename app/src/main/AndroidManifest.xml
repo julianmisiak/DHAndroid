@@ -18,7 +18,8 @@
         </activity>
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio1Activity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio2Activity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio3Activity"></activity>
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio3Activity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.CalculadoraActivity"></activity>
     </application>
 
 </manifest>

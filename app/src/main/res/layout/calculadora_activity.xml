@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculadoraActivity">
+
+    <EditText
+        android:id="@+id/etPantallaSubtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/white"
+        android:gravity="end"
+        android:padding="1sp"/>
+    <EditText
+        android:id="@+id/etPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:inputType="numberDecimal"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/white"
+        android:text="0"
+        android:gravity="end"
+        android:paddingBottom="8sp"
+        android:paddingLeft="8sp"
+        android:paddingRight="8sp"
+        android:layout_below="@+id/etPantallaSubtotal"/>
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPantalla"
+        android:background="@android:color/darker_gray"
+        android:padding="10sp"
+        android:text="C"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btnSumRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPantalla"
+        android:layout_toRightOf="@+id/btnC"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="+/-"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnPorciento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPantalla"
+        android:layout_toRightOf="@+id/btnSumRes"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="%"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPantalla"
+        android:layout_toRightOf="@+id/btnPorciento"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="/"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_orange_dark"/>
+
+
+    <Button
+        android:id="@+id/btnSiete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnC"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="7"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnOcho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSumRes"
+        android:layout_toRightOf="@+id/btnSiete"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="8"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnNueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPorciento"
+        android:layout_toRightOf="@+id/btnOcho"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="9"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnMultiplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDividir"
+        android:layout_toRightOf="@+id/btnNueve"
+        android:background="@android:color/holo_orange_dark"
+        android:padding="10sp"
+        android:text="x"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+
+
+    <Button
+        android:id="@+id/btnCuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSiete"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="4"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnCinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOcho"
+        android:layout_toRightOf="@+id/btnCuatro"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="5"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnSeis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNueve"
+        android:layout_toRightOf="@+id/btnCinco"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="6"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMultiplicacion"
+        android:layout_toRightOf="@+id/btnSeis"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="-"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <Button
+        android:id="@+id/btnUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCuatro"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="1"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCinco"
+        android:layout_toRightOf="@+id/btnUno"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="2"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSeis"
+        android:layout_toRightOf="@+id/btnDos"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="3"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnResta"
+        android:layout_toRightOf="@+id/btnTres"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <Button
+        android:id="@+id/btnCero"
+        android:layout_width="176dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnUno"
+        android:background="@android:color/darker_gray"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnPunto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnTres"
+        android:layout_toRightOf="@+id/btnCero"
+        android:background="@android:color/darker_gray"
+        android:padding="10sp"
+        android:text="."
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSuma"
+        android:layout_toRightOf="@+id/btnPunto"
+        android:background="@android:color/holo_orange_dark"
+        android:padding="10sp"
+        android:textSize="40sp"
+        android:text="="
+        android:textColor="@android:color/black"/>
+
+</android.widget.RelativeLayout>
