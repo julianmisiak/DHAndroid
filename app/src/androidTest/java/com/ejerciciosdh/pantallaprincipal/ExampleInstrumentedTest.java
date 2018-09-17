@@ -1,4 +1,4 @@
-package com.ejerciciosdh.ejericiciosdh;
+package com.ejerciciosdh.pantallaprincipal;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ejerciciosdh.ejericiciosdh", appContext.getPackageName());
+        assertEquals("com.ejerciciosdh.pantallaprincipalactivity", appContext.getPackageName());
     }
 }

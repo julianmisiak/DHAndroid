@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.ejerciciosdh.pantallaprincipal.Ejercicio1Activity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="40sp"
+        />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAceptar"
+        android:textSize="15sp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btnCambiarColorTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CambiarColorTexto"
+        android:textSize="15sp"
+        />
+    <Button
+        android:id="@+id/btnCambiarContenidoTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CambiarContenidoTexto"
+        android:textSize="15sp"
+        />
+
+
+
+
+</LinearLayout>
+    <!--android:layout_width="wrap_content" se achica hasta el totál de su contenido -->
+    <!--android:layout_width="20dp" el un valor calculado para que el componente se acomode a las distintas resoluciones -->
+    <!--android:textSize="30sp"-->

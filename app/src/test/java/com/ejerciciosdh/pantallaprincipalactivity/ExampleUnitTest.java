@@ -1,4 +1,4 @@
-package com.ejerciciosdh.ejericiciosdh;
+package com.ejerciciosdh.pantallaprincipalactivity;
 
 import org.junit.Test;
 

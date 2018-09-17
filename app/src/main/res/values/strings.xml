@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Ejericicios DH</string>
+    <string name="app_name">HelloWord</string>
+    <string name="toast">Tengo mucha hambre y quiero comer una Tostada</string>
+    <string name="nombre">Nombre</string>
+    <string name="btnAceptar">Aceptar</string>
 </resources>
