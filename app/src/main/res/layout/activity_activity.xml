@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ejerciciosdh.pantallaprincipal.ActividadActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnEnClase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hecho en clase"
+        android:background="@android:color/holo_green_dark"
+        android:layout_margin="15dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnEjercicio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 1"
+        android:background="@android:color/holo_green_dark"
+        android:layout_margin="15dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnEjercicio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 2"
+        android:background="@android:color/holo_green_dark"
+        android:layout_margin="15dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnEjercicio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 3"
+        android:background="@android:color/holo_green_dark"
+        android:layout_margin="15dp"
+        android:textSize="20sp"/>
+
+</android.widget.LinearLayout>

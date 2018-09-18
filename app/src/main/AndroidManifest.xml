@@ -19,9 +19,14 @@
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio1Activity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio2Activity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio3Activity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.CalculadoraActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-        </activity>
+        <activity
+            android:name="com.ejerciciosdh.pantallaprincipal.CalculadoraActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.ActividadActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.SenderActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejer2ActActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejer3ActActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.EnClaseActivity"></activity>
     </application>
 
 </manifest>
