@@ -26,7 +26,8 @@
         <activity android:name="com.ejerciciosdh.pantallaprincipal.SenderActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejer2ActActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejer3ActActivity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.EnClaseActivity"></activity>
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.EnClaseActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.ReceptorActivity"></activity>
     </application>
 
 </manifest>

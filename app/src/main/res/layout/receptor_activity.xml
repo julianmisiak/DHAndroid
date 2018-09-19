@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ejerciciosdh.pantallaprincipal.SenderActivity"
+    tools:context="com.ejerciciosdh.pantallaprincipal.ReceptorActivity"
     android:background="@android:color/black">
+
 
     <LinearLayout
         android:layout_margin="20dp"
@@ -21,16 +22,12 @@
             android:text="Nombre: "
             android:textColor="@android:color/holo_orange_dark"/>
 
-        <EditText
-            android:id="@+id/txtNombre"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/txtViewNombreRecibido"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:outlineAmbientShadowColor="@android:color/holo_orange_dark"
-            android:shadowColor="@android:color/holo_orange_dark"
-            android:textColorLink="@android:color/widget_edittext_dark"
-            android:textColorHighlight="@android:color/holo_orange_dark"
-            android:textColor="@android:color/holo_orange_dark"
-          />
+            android:textColor="@android:color/holo_green_light"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -46,11 +43,11 @@
             android:text="Apellido: "
             android:textColor="@android:color/holo_orange_dark"/>
 
-        <EditText
-            android:id="@+id/txtApellido"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/txtViewApellidoRecibido"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_orange_dark"/>
+            android:textColor="@android:color/holo_green_light"/>
     </LinearLayout>
 
 
@@ -68,24 +65,13 @@
             android:text="Edad: "
             android:textColor="@android:color/holo_orange_dark"/>
 
-        <EditText
-            android:id="@+id/txtEdad"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/txtViewEdadRecibido"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:textColor="@android:color/holo_orange_dark"/>
+            android:textColor="@android:color/holo_green_light"/>
     </LinearLayout>
 
-
-    <Button
-        android:id="@+id/btnMandar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_dark"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="MANDAR"
-        android:textColor="@android:color/holo_red_dark"/>
 
 
 
