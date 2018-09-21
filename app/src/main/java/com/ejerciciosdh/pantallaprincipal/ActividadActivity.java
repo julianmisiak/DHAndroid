@@ -17,8 +17,8 @@ public class ActividadActivity extends AppCompatActivity {
     Button btnEnClase;
     @BindView(R.id.btnEjercicio1)
     Button btnEjercicio1;
-    @BindView(R.id.btnEjercicio2)
-    Button btnEjercicio2;
+    @BindView(R.id.btnLoginRegistrer)
+    Button btnLoginRegistrer;
     @BindView(R.id.btnEjercicio3)
     Button btnEjercicio3;
     private Unbinder unbinder;
@@ -30,7 +30,7 @@ public class ActividadActivity extends AppCompatActivity {
         unbinder = ButterKnife.bind(this);
         btnEnClase.setOnClickListener(listenerBtnEnClase);
         btnEjercicio1.setOnClickListener(listenerEjericicio1);
-        btnEjercicio2.setOnClickListener(listenerEjericicio2);
+        btnLoginRegistrer.setOnClickListener(listenerLoginRegistrer);
         btnEjercicio3.setOnClickListener(listenerEjericicio3);
 
 
@@ -56,10 +56,10 @@ public class ActividadActivity extends AppCompatActivity {
     };
 
 
-    View.OnClickListener listenerEjericicio2 = new View.OnClickListener() {
+    View.OnClickListener listenerLoginRegistrer = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(v.getContext(), Ejer2ActActivity.class);
+            Intent intent = new Intent(v.getContext(), LoginRegistrerActivity.class);
             startActivityForResult(intent, 0);
 
         }

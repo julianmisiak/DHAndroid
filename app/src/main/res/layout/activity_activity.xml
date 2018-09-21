@@ -25,11 +25,12 @@
         android:layout_margin="15dp"
         android:textSize="20sp"/>
 
+
     <Button
-        android:id="@+id/btnEjercicio2"
+        android:id="@+id/btnLoginRegistrer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ejercicio 2"
+        android:text="Login Registrer"
         android:background="@android:color/holo_green_dark"
         android:layout_margin="15dp"
         android:textSize="20sp"/>

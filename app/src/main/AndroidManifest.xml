@@ -16,18 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio1Activity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio2Activity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio3Activity" />
+
         <activity
             android:name="com.ejerciciosdh.pantallaprincipal.CalculadoraActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.ActividadActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.SenderActivity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejer2ActActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.LoginRegistrerActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejer3ActActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.EnClaseActivity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.ReceptorActivity"></activity>
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.ReceptorActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.LoginActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.RegisterActivity"/>
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio1Activity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio2Activity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio3Activity" />
+
     </application>
 
 </manifest>
