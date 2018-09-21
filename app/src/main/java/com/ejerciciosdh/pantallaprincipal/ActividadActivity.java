@@ -32,8 +32,6 @@ public class ActividadActivity extends AppCompatActivity {
         btnEjercicio1.setOnClickListener(listenerEjericicio1);
         btnLoginRegistrer.setOnClickListener(listenerLoginRegistrer);
         btnEjercicio3.setOnClickListener(listenerEjericicio3);
-
-
     }
 
 
@@ -68,7 +66,7 @@ public class ActividadActivity extends AppCompatActivity {
     View.OnClickListener listenerEjericicio3 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(v.getContext(), Ejer3ActActivity.class);
+            Intent intent = new Intent(v.getContext(), FormularioCompletoActivity.class);
             startActivityForResult(intent, 0);
 
         }
