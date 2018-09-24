@@ -46,4 +46,11 @@
         android:layout_below="@+id/btnCalculadora"
         android:text="Actividades" />
 
+    <Button
+        android:id="@+id/btnFragments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFragments"
+        android:text="Fragments" />
+
 </LinearLayout>

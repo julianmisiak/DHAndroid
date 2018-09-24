@@ -3,4 +3,7 @@
     <string name="toast">Tengo mucha hambre y quiero comer una Tostada</string>
     <string name="nombre">Nombre</string>
     <string name="btnAceptar">Aceptar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,7 +1,6 @@
 package com.ejerciciosdh.pantallaprincipal;
 
 
-
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,7 +11,6 @@ import com.ejerciciosdh.pantallaprincipalactivity.R;
 
 /**
  * A simple {@link Fragment} subclass.
- *
  */
 public class RojoFragment extends Fragment {
 

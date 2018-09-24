@@ -23,6 +23,9 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
     Button btnCalculadora;
     @BindView(R.id.btnActividades)
     Button btnActividades;
+    @BindView(R.id.btnFragments)
+    Button btnFragments;
+
     private Unbinder unbinder;
 
     @Override
@@ -36,6 +39,8 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
         btnEjercicio3.setOnClickListener(listenerEjericicio3);
         btnCalculadora.setOnClickListener(listenerCalculadora);
         btnActividades.setOnClickListener(listenerActividades);
+        btnFragments.setOnClickListener(listenerFragments);
+
     }
 
 
@@ -81,6 +86,15 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
         public void onClick(View v) {
             Intent intent = new Intent(v.getContext(), ActividadActivity.class);
             startActivityForResult(intent, 0);
+
+        }
+    };
+
+    View.OnClickListener listenerFragments= new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(v.getContext(), FragmentsActivity.class);
+            startActivity(intent);
 
         }
     };

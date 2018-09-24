@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ejerciciosdh.pantallaprincipal.FragmentsEjerActivity">
+    tools:context="com.ejerciciosdh.pantallaprincipal.FragmentsEjerActivity"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"
+        android:orientation="vertical"
+    >
+
+
+        <Button
+            android:id="@+id/btnRojo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Botón Rojo"
+            android:background="@android:color/holo_red_light"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Botón Verde"
+            android:background="@android:color/holo_green_light"
+            android:layout_margin="10dp"
+            />
+
+</LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+       ></FrameLayout>
+
+</LinearLayout>
