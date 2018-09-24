@@ -1,7 +1,8 @@
 package com.ejerciciosdh.pantallaprincipal;
 
-import android.app.FragmentTransaction;
-import android.support.v4.app.Fragment;
+
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,18 +26,22 @@ public class FragmentsEjerActivity extends AppCompatActivity {
         btnRojo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment,rojoFragment);
-                ft.commit();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                fragmentTransaction.replace(R.id.fragment,rojoFragment);
+                fragmentTransaction.commit();
             }
         });
 
         btnVerde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment, verdeFragment);
-                ft.commit();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                fragmentTransaction.replace(R.id.fragment,verdeFragment);
+                fragmentTransaction.commit();
             }
         });
     }

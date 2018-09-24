@@ -35,6 +35,7 @@
         <activity android:name="com.ejerciciosdh.pantallaprincipal.RelojActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.EnvioActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.FragmentsActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.FragmentsEjerActivity" />
     </application>
 
 </manifest>

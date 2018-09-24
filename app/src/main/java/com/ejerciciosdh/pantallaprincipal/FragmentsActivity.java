@@ -24,7 +24,7 @@ public class FragmentsActivity extends AppCompatActivity {
     View.OnClickListener listenerEjerFragment = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), FragmentsEjerActivity.class);
+            Intent intent = new Intent(v.getContext(), FragmentsEjerActivity.class);
             startActivity(intent);
         }
     };
