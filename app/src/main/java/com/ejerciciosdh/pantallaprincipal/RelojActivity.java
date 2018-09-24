@@ -1,7 +1,9 @@
-package com.ejerciciosdh.pantallaprincipalactivity;
+package com.ejerciciosdh.pantallaprincipal;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.ejerciciosdh.pantallaprincipalactivity.R;
 
 public class RelojActivity extends AppCompatActivity {
 

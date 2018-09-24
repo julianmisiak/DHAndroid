@@ -21,6 +21,8 @@ public class ActividadActivity extends AppCompatActivity {
     Button btnLoginRegistrer;
     @BindView(R.id.btnEjercicio3)
     Button btnEjercicio3;
+    @BindView(R.id.btnReloj)
+    Button btnReloj;
     private Unbinder unbinder;
 
     @Override
@@ -32,6 +34,7 @@ public class ActividadActivity extends AppCompatActivity {
         btnEjercicio1.setOnClickListener(listenerEjericicio1);
         btnLoginRegistrer.setOnClickListener(listenerLoginRegistrer);
         btnEjercicio3.setOnClickListener(listenerEjericicio3);
+        btnReloj.setOnClickListener(listenerReloj);
     }
 
 
@@ -72,6 +75,14 @@ public class ActividadActivity extends AppCompatActivity {
         }
     };
 
+    View.OnClickListener listenerReloj = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(v.getContext(), RelojActivity.class);
+            startActivity(intent);
+
+        }
+    };
     @Override
     protected void onDestroy() {
         super.onDestroy();

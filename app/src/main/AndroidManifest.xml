@@ -32,9 +32,9 @@
         <activity android:name="com.ejerciciosdh.pantallaprincipal.Ejercicio3Activity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.FormularioCompletoActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.FormularioActivity" />
+        <activity android:name="com.ejerciciosdh.pantallaprincipal.RelojActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.EnvioActivity" />
         <activity android:name="com.ejerciciosdh.pantallaprincipal.FragmentsActivity" />
-        <activity android:name="com.ejerciciosdh.pantallaprincipal.FragmentsEjerActivity"></activity>
     </application>
 
 </manifest>
